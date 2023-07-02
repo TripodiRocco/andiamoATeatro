@@ -14,6 +14,7 @@ Al momento dell’iscrizione l’utente deve inserire i suoi dati personali come
 indirizzo di residenza, email e numero di telefono (facoltativo). Una volta iscritto l’utente può
 procedere con la prenotazione degli spettacoli.
 Le funzionalità che il sistema deve poter garantire sono le seguenti:
+
 1) Gli utenti devono potersi registrare inserendo i loro dati personali.
 2) Gli utenti registrati devono poter prenotare dei posti disponibili in uno spettacolo, e il sistema
 deve calcolare il prezzo da pagare per l’utente.
