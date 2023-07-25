@@ -7,13 +7,13 @@ CREATE table if not EXISTS SEDE(
 );
 
 
-/*
+
 INSERT INTO SEDE(ID_SEDE, NOME_SEDE, INDIRIZZO_SEDE, COMUNE, LUOGO_APERTO)
 VALUES (1, 'Menotti', 'Via Ciro Menotti 11', 'Milano', false),
 (2, 'Modigliani Forum', 'Porta a Terra 57100', 'Livorno', false),
 (3, 'Nelson Mandela Forum', 'Viale Malta 50137', 'Firenze', true),
 (4, 'Ippodromo le Capannelle', 'Via Appia Nuova 1255, 00178', 'Roma', false);
-*/
+
 
 
 CREATE table if not EXISTS UTENTE(
@@ -25,13 +25,13 @@ CREATE table if not EXISTS UTENTE(
 	TELEFONO VARCHAR(255)
 );
 
-/*
+
 INSERT INTO UTENTE(ID_UTENTE, NOME_UTENTE, COGNOME_UTENTE, INDIRIZZO_UTENTE, MAIL, TELEFONO)
 VALUES (1, 'Mario', 'Rossi', 'Corso Vittorio Emanuele II, 101, Napoli - CAP 80121', 'mario.rossi@gmail.com', '345 6789012'),
 (2, 'Sara', 'Bianchi', 'Piazza del Campo, 1, Siena, Italia - CAP 53100', 'sara.bianchi@yahoo.com', '334 5678901'),
 (3, 'Giuseppe', 'Verdi', 'Via dei Fori Imperiali, 1, Roma, Italia - CAP 00184', 'giuseppe.verdi@tiscali.it', '339 1234567'),
 (4, 'Manuela', 'Gialli', 'Via Dante Alighieri, 8, Firenze, Italia - CAP 50122', 'manuela.gialli@virgilio.it', '348 9012345');
-*/
+
 
 CREATE table if not EXISTS SALA(
 	ID_SALA INT PRIMARY KEY,
@@ -53,7 +53,7 @@ CREATE table if not EXISTS SPETTACOLO(
 );
 
 
-/*
+
 INSERT INTO SALA(ID_SALA, NOME_SALA, ID_SEDE)
 VALUES (1, 'sala1', 1),
 (2, 'sala2', 2),
@@ -61,13 +61,13 @@ VALUES (1, 'sala1', 1),
 (4, 'sala4', 4);
 */
 
-/*
+
 INSERT INTO SPETTACOLO(ID_SPETTACOLO, NOME_SPETTACOLO, GENERE, ORARIO, DURATA, PREZZO, ID_SALA)
 VALUES (1, 'Macbeth', 'Tragedia', '2017-07-23 19:00:00', 200, 30.15, 1),
 (2, 'I labirinti della mente', 'Thriller', '2021-09-14 15:00:00', 100, 55.27, 2),
 (3, 'Paolo Fresu & Omar Sosa - Food', 'Commedia', '2022-11-06 18:00:00', 200, 64.07, 3),
 (4, 'The Space Violin Visual Concert', 'Opera lirica', '2023-05-09 17:00:00', 250, 75.48, 4);
-*/
+
 
 
 CREATE table if not EXISTS POSTO(
@@ -78,13 +78,13 @@ CREATE table if not EXISTS POSTO(
 	foreign key (ID_SALA) references SALA (ID_SALA)
 );
 
-/*
+
 INSERT INTO POSTO(ID_POSTO, FILA, NUMERO_POSTO, ID_SALA)
 VALUES (1, 7, 5, 1),
 (2, 4, 9, 1),
 (3, 1, 2, 2),
 (4, 4, 6, 3);
-*/
+
 
 
 CREATE table if not EXISTS TICKET(
@@ -98,13 +98,13 @@ CREATE table if not EXISTS TICKET(
 	foreign key (ID_UTENTE) references UTENTE (ID_UTENTE)
 );
 
-/*
+
 INSERT INTO TICKET(ID_TICKET, ORARIO_TICKET, ID_POSTO, ID_SPETTACOLO, ID_UTENTE)
 VALUES (1, "2017-07-23 19:00:00", 1, 1, 1),
 (2, "2021-09-14 15:00:00", 2, 2, 1),
 (3, "2022-11-06 18:00:00", 3, 2, 2),
 (4, "2023-05-09 17:00:00", 4, 3, 3);
-*/
+
 
 
 
