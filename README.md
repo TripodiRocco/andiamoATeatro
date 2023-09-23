@@ -1,4 +1,8 @@
-Vogliamo progettare l’applicazione AndiamoATeatro, un’applicazione per visualizzare, prenotare e
+Quello che segue è il testo di un'esercitazione che ci è stata data da uno dei tutor (Marco Adriani) presenti in Develhope, con lo scopo di familiarizzare nella progettazione di un diagramma Entity Relationship, durante l'apprendimento dell'unità SQL:
+
+------------
+
+<i>Vogliamo progettare l’applicazione AndiamoATeatro, un’applicazione per visualizzare, prenotare e
 acquistare biglietti per spettacoli teatrali in tutta Italia.
 Gli spettacoli posso avvenire in diverse sedi, non solo teatri (ad esempio nei pressi di un
 monumento, di un parco, ecc.), e di esse vogliamo sapere il nome, l’indirizzo e il comune dove
