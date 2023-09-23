@@ -1,4 +1,4 @@
-Quello che segue è il testo di un'esercitazione che ci è stata data da uno dei tutor (Marco Adriani) presenti in Develhope, con lo scopo di familiarizzare nella progettazione di un diagramma Entity Relationship, durante l'apprendimento dell'unità SQL:
+Quello che segue è il testo di un'esercitazione che ci è stata data da uno dei tutor (Marco Adriani) presenti in Develhope, con lo scopo di familiarizzare nella progettazione di un diagramma Entity Relationship e nella creazione del relativo database, durante l'apprendimento dell'unità SQL:
 
 ------------
 
